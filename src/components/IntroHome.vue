@@ -10,13 +10,14 @@
 						<div class="img-container">
 							<img
 								src="https://is3-ssl.mzstatic.com/image/thumb/Music113/v4/ef/41/ea/ef41eadf-0200-6bcd-999b-7c8ac78d298c/source/600x600bb.jpg"
-								width="300"
-								height="300"
 							/>
 						</div>
 						<div class="text-container">
-							<p class="title">Hey</p>
-							<p class="subtitle">Yo</p>
+							<p class="title">23 Aaron's Flagship Podcast</p>
+							<p class="subtitle" lang="en">
+								Candid, in-depth discussions with some of the
+								iOS jailbreaking scenes leading developers
+							</p>
 						</div>
 					</div>
 				</div>
@@ -65,12 +66,33 @@ export default {
 
 .img-container img {
 	border-radius: 20px;
-	box-shadow: 1em 1em 3em #000;
+	box-shadow: 1em 1em 3em 0.5em rgb(19, 18, 18);
+	width: 300px;
+	height: 300px;
+}
+
+@media (max-width: 768px) {
+	.hero-body {
+		padding-top: 0px !important;
+		padding-bottom: 50px !important;
+	}
+	.flex-container {
+		flex-direction: column;
+	}
+	.img-container img {
+		width: 200px;
+		height: 200px;
+	}
 }
 
 .text-container {
-	flex-grow: 1.5;
+	flex-grow: 1;
+	flex-basis: 200px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
 }
+
 .text-container p {
 	color: #fff;
 }
