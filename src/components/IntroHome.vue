@@ -18,6 +18,7 @@
 								Candid, in-depth discussions with some of the
 								iOS jailbreaking scenes leading developers
 							</p>
+							<SocialButtons></SocialButtons>
 						</div>
 					</div>
 				</div>
@@ -28,10 +29,12 @@
 
 <script>
 import Navbar from "@/components/Navbar";
+import SocialButtons from "@/components/SocialButtons";
 export default {
 	name: "IntroHome",
 	components: {
-		Navbar
+		Navbar,
+		SocialButtons
 	}
 };
 </script>
@@ -55,7 +58,7 @@ export default {
 }
 .hero-body {
 	padding-top: 100px !important;
-	padding-bottom: 100px !important;
+	padding-bottom: 50px !important;
 }
 
 .img-container {

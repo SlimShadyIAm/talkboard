@@ -1,10 +1,6 @@
 <template>
 	<nav class="navbar" role="navigation" aria-label="main navigation">
 		<div class="navbar-brand">
-			<a class="navbar-item" href="https://bulma.io">
-				Talkboard
-			</a>
-
 			<a
 				role="button"
 				class="navbar-burger burger"
@@ -38,4 +34,12 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.navbar-burger {
+	color: #fff;
+}
+
+.navbar-burger:hover {
+	color: rgb(204, 200, 200);
+}
+</style>
