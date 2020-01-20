@@ -12,6 +12,10 @@
 			><span class="icon is-small"><i class="fas fa-envelope"></i></span
 			><span>Email</span></a
 		>
+		<a href="" class="button merch"
+			><span class="icon is-small"><i class="fas fa-envelope"></i></span
+			><span>Buy our merch!</span></a
+		>
 	</div>
 </template>
 
@@ -25,7 +29,6 @@ export default {
 .social-outer {
 	display: flex;
 	align-items: center;
-	justify-content: center;
 	width: 100%;
 }
 
@@ -33,7 +36,7 @@ export default {
 	margin: 5px;
 	border: none;
 	color: #fff;
-	width: 33%;
+	width: 175px
 }
 
 .twitter {
@@ -45,6 +48,10 @@ export default {
 }
 
 .email {
-	background-color: #e63b3b;
+	background-color: #FF4136;
+}
+
+.merch {
+	background-color: #F012BE;
 }
 </style>
