@@ -8,9 +8,7 @@
                 <div class="container">
                     <div class="flex-container">
                         <div class="img-container">
-                            <img
-                                src="https://is3-ssl.mzstatic.com/image/thumb/Music113/v4/ef/41/ea/ef41eadf-0200-6bcd-999b-7c8ac78d298c/source/600x600bb.jpg"
-                            />
+                            <img src="@/assets/logo.png" />
                         </div>
                         <div class="text-container">
                             <p class="title">23 Aaron's Flagship Podcast</p>
@@ -24,20 +22,17 @@
                 </div>
             </div>
         </section>
-        <WhereToListen></WhereToListen>
     </div>
 </template>
 
 <script>
 import Navbar from "@/components/Navbar";
-import WhereToListen from "@/components/WhereToListen";
 import SocialButtons from "@/components/SocialButtons";
 export default {
     name: "IntroHome",
     components: {
         Navbar,
-        SocialButtons,
-        WhereToListen
+        SocialButtons
     }
 };
 </script>
@@ -45,7 +40,7 @@ export default {
 <style>
 .purple-gradient {
     background: #8432b4;
-    /* background: linear-gradient(180deg, #9f3ada 10%, #111111 100%); */
+    background: linear-gradient(140deg, #9f3ada 10%, #501a70 100%);
     /* box-shadow: inset 0em 0em 5em 0em rgb(49, 49, 49); */
 }
 .flex-container {
@@ -56,8 +51,8 @@ export default {
     width: 100%;
 }
 .hero-body {
-    padding-top: 80px !important;
-    padding-bottom: 150px !important;
+    padding-top: 30px !important;
+    padding-bottom: 50px !important;
 }
 
 .img-container {
@@ -68,7 +63,7 @@ export default {
 
 .img-container img {
     border-radius: 20px;
-    box-shadow: 1em 1em 3em 0.5em rgb(19, 18, 18);
+    box-shadow: 0.5em 0.5em 2em 0.2em rgb(19, 18, 18);
     width: 300px;
     height: 300px;
 }

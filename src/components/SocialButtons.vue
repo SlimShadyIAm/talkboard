@@ -1,8 +1,17 @@
 <template>
 	<div class="social-outer">
-		<a href="" class="button twitter">Twitter</a>
-		<a href="" class="button discord">Discord</a>
-		<a href="" class="button email">Email</a>
+		<a href="" class="button twitter"
+			><span class="icon is-small"><i class="fab fa-twitter"></i></span
+			><span>Twitter</span></a
+		>
+		<a href="" class="button discord"
+			><span class="icon is-small"><i class="fab fa-discord"></i></span
+			><span>Discord</span></a
+		>
+		<a href="" class="button email"
+			><span class="icon is-small"><i class="fas fa-envelope"></i></span
+			><span>Email</span></a
+		>
 	</div>
 </template>
 
