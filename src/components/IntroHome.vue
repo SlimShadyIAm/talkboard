@@ -80,6 +80,10 @@ export default {
         width: 200px;
         height: 200px;
     }
+    
+    .text-container {
+        margin-top: 40px;
+    }
 }
 
 .text-container {

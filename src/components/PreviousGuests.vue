@@ -1,7 +1,7 @@
 <template>
 	<div class="columns is-multiline">
 		<div
-			class="column is-6-mobile is-4-desktop"
+			class="column is-12-mobile is-4-desktop"
 			v-for="profile in profiles"
 			:key="profile.id"
 		>

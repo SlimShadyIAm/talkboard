@@ -27,8 +27,7 @@ export default {
 
 <style>
 .social-outer {
-	display: flex;
-	align-items: center;
+	display: block;
 	width: 100%;
 }
 
@@ -37,6 +36,12 @@ export default {
 	border: none;
 	color: #fff;
 	width: 175px
+}
+
+@media(max-width: 768px) {
+	.button {
+		width: 100%;
+	}
 }
 
 .twitter {

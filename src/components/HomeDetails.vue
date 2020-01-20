@@ -9,6 +9,7 @@
                     class="subtitle is-5"
                 >From week to week, there will be special guests, interesting topics, and even community questions. If you'd like to take part in the podcast, contact @TalkBoardLive on Twitter.</p>
             </div>
+            <br>
             <div class="column">
                 <p class="title">Previous Guests</p>
                 <PreviousGuests></PreviousGuests>
@@ -42,4 +43,10 @@ export default {
 .start .title {
     text-align: center;
 }
+
+.columns {
+    margin-left: 0rem;
+    margin-right: 0rem;
+}
+
 </style>
