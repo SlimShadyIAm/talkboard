@@ -1,19 +1,35 @@
 <template>
 	<section class="hero where-to-listen">
 		<div class="hero-body reset">
-			<div class="flex-container">
-				<!-- <p class="listen-on">Listen on:</!-->
+			<div class="columns">
+				<div class="column is-3">
+					<!-- <p class="listen-on">Listen on:</!-->
 
-				<img class="badge" src="@/assets/spotify-badge.png" />
-				<img class="badge" src="@/assets/apple-badge.png" />
+					<div class="badges">
+						<img
+							class="badge"
+							src="@/assets/spotify-badge.png"
+						/><br />
+						<img class="badge" src="@/assets/apple-badge.png" />
+					</div>
+				</div>
+				<div class="column">
+					<!-- <p class="title has-text-white">Latest episodes:</p> -->
+					<Episodes></Episodes>
+				</div>
 			</div>
 		</div>
 	</section>
 </template>
 
 <script>
+import Episodes from "@/components/Episodes";
+
 export default {
-	name: "WhereToListen"
+	name: "WhereToListen",
+	components: {
+		Episodes
+	}
 };
 </script>
 
@@ -27,9 +43,18 @@ export default {
 	padding-bottom: 30px !important;
 }
 
+.badges {
+	display: flex;
+	height: 100%;
+	justify-content: center;
+	flex-direction: column;
+}
+
 .badge {
-	height: 70px;
+	width: 225px;
 	margin: 10px;
+	display: block;
+	margin: 0 auto;
 }
 
 .listen-on {

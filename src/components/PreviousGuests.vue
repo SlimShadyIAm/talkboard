@@ -5,7 +5,11 @@
 			v-for="profile in profiles"
 			:key="profile.id"
 		>
-			<Profile :src="profile.src" :name="profile.name" :twitter="profile.twitter"></Profile>
+			<Profile
+				:src="profile.src"
+				:name="profile.name"
+				:twitter="profile.twitter"
+			></Profile>
 		</div>
 	</div>
 </template>
@@ -61,7 +65,7 @@ export default {
 					name: "Micah Gomez",
 					src: Micah,
 					twitter: "https://twitter.com/micahpgomez"
-				},
+				}
 			]
 		};
 	}
