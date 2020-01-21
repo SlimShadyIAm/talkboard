@@ -25,7 +25,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .social-outer {
 	display: block;
 	width: 100%;
@@ -35,10 +35,10 @@ export default {
 	margin: 5px;
 	border: none;
 	color: #fff;
-	width: 175px
+	width: 175px;
 }
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
 	.button {
 		width: 100%;
 	}
@@ -53,10 +53,10 @@ export default {
 }
 
 .email {
-	background-color: #FF4136;
+	background-color: #ff4136;
 }
 
 .merch {
-	background-color: #F012BE;
+	background-color: #f012be;
 }
 </style>

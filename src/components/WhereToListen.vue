@@ -11,10 +11,27 @@
 							src="@/assets/spotify-badge.png"
 						/><br />
 						<img class="badge" src="@/assets/apple-badge.png" />
+						<div class="field has-addons badge rss">
+							<div class="control">
+								<input
+									class="input"
+									type="text"
+									value="Copy RSS Feed"
+								/>
+							</div>
+							<div class="control">
+								<a
+									class="button is-info"
+									v-clipboard:copy="message"
+								>
+									Copy
+								</a>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div class="column">
-					<!-- <p class="title has-text-white">Latest episodes:</p> -->
+					<p class="title has-text-white">Latest episodes:</p>
 					<Episodes></Episodes>
 				</div>
 			</div>
@@ -24,11 +41,20 @@
 
 <script>
 import Episodes from "@/components/Episodes";
+import VueClipboard from "vue-clipboard2";
+import Vue from "vue";
+VueClipboard.config.autoSetContainer = true; // add this line
+Vue.use(VueClipboard);
 
 export default {
 	name: "WhereToListen",
 	components: {
 		Episodes
+	},
+	data() {
+		return {
+			message: "https://rss.whooshkaa.com/rss/podcast/id/7841"
+		};
 	}
 };
 </script>
@@ -40,7 +66,7 @@ export default {
 
 .reset {
 	padding-top: 30px !important;
-	padding-bottom: 30px !important;
+	padding-bottom: 50px !important;
 }
 
 .badges {
@@ -55,6 +81,11 @@ export default {
 	margin: 10px;
 	display: block;
 	margin: 0 auto;
+}
+
+.rss {
+	margin-top: 30px;
+	background-color: #ff851b;
 }
 
 .listen-on {

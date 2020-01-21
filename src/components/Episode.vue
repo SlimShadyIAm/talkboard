@@ -37,7 +37,7 @@ export default {
 	props: ["episode"],
 	data() {
 		return {
-			timestamp: moment(this.episode.time).fromNow()
+			timestamp: moment(this.episode.pubDate).fromNow()
 		};
 	}
 };
