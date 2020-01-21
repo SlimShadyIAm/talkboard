@@ -11,7 +11,7 @@
                         <p
                             class="subtitle"
                             lang="en"
-                        >Candid, in-depth discussions with some of the tech scene's most talented developers”</p>
+                        >Candid, in-depth discussions with some of the tech scene's most talented developers</p>
                         <SocialButtons></SocialButtons>
                     </div>
                 </div>
