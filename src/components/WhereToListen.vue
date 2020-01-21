@@ -6,7 +6,7 @@
                     <div class="column is-3">
                         <!-- <p class="listen-on">Listen on:</!-->
                         <p class="title has-text-white has-text-centered">Where to listen</p>
-                        <div class="badges">
+                        <div class="badges container">
                             <a href="https://open.spotify.com/show/1sCjmMpUDqnJNU54KwRf2Z">
                                 <img class="badge" src="@/assets/spotify-badge.png" />
                             </a>
@@ -14,7 +14,7 @@
                             <a href="https://podcasts.apple.com/gb/podcast/talkboard/id1469760640">
                                 <img class="badge" src="@/assets/apple-badge.png" />
                             </a>
-                            <div class="badge rss">
+                            <div class="rss">
                                 <a
                                     class="button copy-button is-info has-text-white"
                                     v-clipboard:copy="message"
@@ -67,6 +67,7 @@ export default {
     justify-content: center;
     flex-direction: column;
     height: 80%;
+    width: 100%;
 }
 
 .badge {
@@ -82,8 +83,11 @@ export default {
 }
 
 .copy-button {
+    display: block;
+    margin: 0 auto;
     width: 100%;
-    border: none;
+    max-width: 225px;
+    ''border: none;
 }
 
 .listen-on {
