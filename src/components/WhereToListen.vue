@@ -15,16 +15,15 @@
                                 <img class="badge" src="@/assets/apple-badge.png" />
                             </a>
                             <div class="badge rss">
-                                <a class="button copy-text">Copy RSS Link</a>
                                 <a
-                                    class="button is-info copy-button"
+                                    class="button copy-button is-info has-text-white"
                                     v-clipboard:copy="message"
-                                >Copy</a>
+                                >Copy RSS Link</a>
                             </div>
                         </div>
                     </div>
                     <div class="column">
-                        <p class="title has-text-white">Latest episodes</p>
+                        <p class="title has-text-white has-text-centered-mobile">Latest episodes</p>
                         <Episodes></Episodes>
                     </div>
                 </div>
@@ -37,7 +36,7 @@
 import Episodes from "@/components/Episodes";
 import VueClipboard from "vue-clipboard2";
 import Vue from "vue";
-VueClipboard.config.autoSetContainer = true; // add this line
+VueClipboard.config.autoSetContainer = true;
 Vue.use(VueClipboard);
 
 export default {
@@ -82,16 +81,9 @@ export default {
     display: inline-block;
 }
 
-.copy-text {
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
-    width: 65%;
-}
-
 .copy-button {
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
-    width: 35%;
+    width: 100%;
+    border: none;
 }
 
 .listen-on {
