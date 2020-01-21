@@ -18,23 +18,14 @@
 							href="https://podcasts.apple.com/gb/podcast/talkboard/id1469760640"
 							><img class="badge" src="@/assets/apple-badge.png"
 						/></a>
-						<div class="field has-addons badge rss">
-							<div class="control">
-								<input
-									class="input"
-									type="text"
-									value="Copy RSS Feed"
-									disabled
-								/>
-							</div>
-							<div class="control">
-								<a
-									class="button is-info"
-									v-clipboard:copy="message"
-								>
-									Copy
-								</a>
-							</div>
+						<div class="badge rss">
+							<a class="button copy-text">Copy RSS Link</a>
+							<a
+								class="button is-info copy-button"
+								v-clipboard:copy="message"
+							>
+								Copy
+							</a>
 						</div>
 					</div>
 				</div>
@@ -93,7 +84,19 @@ export default {
 
 .rss {
 	margin-top: 30px;
-	background-color: #ff851b;
+	display: inline-block;
+}
+
+.copy-text {
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+	width: 65%;
+}
+
+.copy-button {
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+	width: 35%;
 }
 
 .listen-on {
