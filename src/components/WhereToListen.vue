@@ -87,7 +87,7 @@ export default {
     margin: 0 auto;
     width: 100%;
     max-width: 225px;
-    ''border: none;
+    border: none;
 }
 
 .listen-on {

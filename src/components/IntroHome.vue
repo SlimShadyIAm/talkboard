@@ -7,11 +7,11 @@
                         <img src="@/assets/logo.png" />
                     </div>
                     <div class="text-container">
-                        <p class="title">23 Aaron's Flagship Podcast</p>
-                        <p class="subtitle" lang="en">
-                            Candid, in-depth discussions with some of the iOS
-                            jailbreaking scenes leading developers
-                        </p>
+                        <p class="title">Tech like you’ve never heard it before</p>
+                        <p
+                            class="subtitle"
+                            lang="en"
+                        >Candid, in-depth discussions with some of the tech scene's most talented developers”</p>
                         <SocialButtons></SocialButtons>
                     </div>
                 </div>
