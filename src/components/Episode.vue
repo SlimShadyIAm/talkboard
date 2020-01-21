@@ -10,7 +10,7 @@
 			}}
 		</p>
 	</div> -->
-	<div class="card column is-3">
+	<div class="card column is-4">
 		<div class="card-content">
 			<div class="media">
 				<div class="media-content">
@@ -48,6 +48,13 @@ export default {
 	background-color: rgb(37, 37, 37);
 	margin-right: 10px;
 	width: auto;
+}
+
+@media (max-width: 768px) {
+	.card {
+		margin-right: 0px;
+		margin-bottom: 10px;
+	}
 }
 
 .episode-title {

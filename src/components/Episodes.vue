@@ -1,10 +1,12 @@
 <template>
-	<div class="episodes columns">
-		<Episode
-			v-for="episode in episodes"
-			:key="episode.guid"
-			:episode="episode"
-		></Episode></div
+	<div class="container">
+		<div class="episodes columns">
+			<Episode
+				v-for="episode in episodes"
+				:key="episode.guid"
+				:episode="episode"
+			></Episode>
+		</div></div
 ></template>
 
 <script>
