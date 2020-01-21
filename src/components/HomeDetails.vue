@@ -3,7 +3,7 @@
         <div class="columns">
             <div class="column">
                 <p class="title is-spaced">About</p>
-                <Profile :src="aaron" name="23 Aaron"></Profile>
+                <Profile :src="aaron" name="23 Aaron" twitter="https://twitter.com/23aaron_"></Profile>
                 <p
                     class="subtitle is-5"
                     style="padding: 0 20px;"
