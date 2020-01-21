@@ -1,19 +1,21 @@
 <template>
 	<div class="social-outer">
-		<a href="" class="button twitter"
+		<a href="https://twitter.com/TalkBoardLive" class="button twitter"
 			><span class="icon is-small"><i class="fab fa-twitter"></i></span
 			><span>Twitter</span></a
 		>
-		<a href="" class="button discord"
+		<a href="https://discord.gg/jPtvbWV" class="button discord"
 			><span class="icon is-small"><i class="fab fa-discord"></i></span
 			><span>Discord</span></a
 		>
-		<a href="" class="button email"
+		<a href="mailto:support@23aaron.com" class="button email"
 			><span class="icon is-small"><i class="fas fa-envelope"></i></span
 			><span>Email</span></a
 		>
-		<a href="" class="button merch"
-			><span class="icon is-small"><i class="fas fa-envelope"></i></span
+		<a
+			href="https://cottonbureau.com/products/talkboard-logo"
+			class="button merch"
+			><span class="icon is-small"><i class="fas fa-tshirt"></i></span
 			><span>Buy our merch!</span></a
 		>
 	</div>
