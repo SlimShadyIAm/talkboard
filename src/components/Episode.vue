@@ -20,6 +20,15 @@
 						{{ episode.itunes.episode }}
 					</p>
 				</div>
+				<div class="media-right">
+					<a
+						:href="episode.link"
+						target="_blank"
+						class="button play-button"
+						><span class="icon has-text-white">
+							<i class="fas fa-play"></i> </span
+					></a>
+				</div>
 			</div>
 
 			<div class="content has-text-white">
@@ -65,6 +74,23 @@ export default {
 
 .episode-desc {
 	color: #fff;
+}
+
+.play-button {
+	border-radius: 50%;
+	background-color: rgb(0, 175, 245);
+	border: none;
+}
+
+.play-button i {
+	margin-left: 2px;
+}
+
+.media {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
 }
 
 time {
